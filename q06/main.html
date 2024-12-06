@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Ass Q6(BootStrap)</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/
+bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.
+js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script>
+<style>
+.x{
+display:none;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$(".x").fadeIn();
+$(".progress-bar").animate({width:"100%"},10000);
+});
+});
+</script>
+</head>
+<body>
+<div class="container">
+<div class="x">
+<div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-sucess" style="width:0%;">0%</div>
+</div>
+<br>
+
+<div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:0%;">0%</div>
+</div>
+<br>
+
+<div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:0%;">0%</div>
+</div>
+<br>
+
+<div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:0%;">0%</div>
+</div>
+</div>
+<br>
+</div>
+<button type="button" class="btn btn-success">Upload files</button>
+</div>
+
+</body>
